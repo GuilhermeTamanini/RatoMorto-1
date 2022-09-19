@@ -22,7 +22,22 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
           </li>
+          <li class="nav-item">
+            <router-link to="/login" class="nav-link active" aria-current="page">Login</router-link>
+          </li>
         </ul>
+        <div class="dropdown user">
+          <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://avatars.githubusercontent.com/u/106554495?v=4" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>User</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
           <button class="btn btn-outline-dark" type="submit">Buscar</button>
@@ -48,5 +63,9 @@
 
   .navbar-brand:hover {
     color: #ffd34f;
+  }
+
+  .user {
+    margin-right: 20px;
   }
 </style>
