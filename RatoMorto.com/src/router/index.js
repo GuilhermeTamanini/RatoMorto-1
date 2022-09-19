@@ -22,7 +22,18 @@ const router = createRouter({
       name: 'rat',
       component: () => import('../views/DancingratView.vue')
 
+    },
+    {
+      path:'/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path:'/cadastro',
+      name: 'cadastro',
+      component: () => import('../views/CadastroView.vue')
     }
+    
   ]
 })
 
